@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LastWorldHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <h1>Last World Hub'a Hoş Geldin!</h1>
+      <p class="subtitle">Dünyanın son durağı — anime, manga ve daha fazlası.</p>
+    </header>
+
+    <section class="choice">
+      <!-- A butonu (Anime) -->
+      <a id="btn-anime" class="logo-btn" href="#" aria-label="LastWorldHub Anime">
+        <!-- Eğer logo görselin varsa assets/logo-A.png koy -->
+        <img src="assets/logo-A.png" alt="A logo" onerror="this.style.display='none'"/>
+        <span class="letter">A</span>
+        <span class="label">Anime</span>
+      </a>
+
+      <!-- M butonu (Manga) -->
+      <a id="btn-manga" class="logo-btn" href="#" aria-label="LastWorldHub Manga">
+        <img src="assets/logo-M.png" alt="M logo" onerror="this.style.display='none'"/>
+        <span class="letter">M</span>
+        <span class="label">Manga</span>
+      </a>
+    </section>
+
+    <footer class="foot">
+      <small>© 2025 LastWorldHub — All Rights Reserved.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

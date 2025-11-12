@@ -1,0 +1,99 @@
+:root{
+  --bg:#0b0b0f;
+  --card:#141417;
+  --accent:#ff5a5f;
+  --muted:#bdbdbd;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  background:linear-gradient(180deg,var(--bg),#0f0f12 80%);
+  color:#fff;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.wrap{
+  width:95%;
+  max-width:980px;
+  padding:28px;
+  text-align:center;
+}
+
+.top h1{
+  margin:0 0 6px 0;
+  font-size:clamp(22px,4vw,36px);
+  letter-spacing:0.6px;
+}
+
+.subtitle{
+  margin:0 0 28px 0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.choice{
+  display:flex;
+  gap:28px;
+  justify-content:center;
+  align-items:center;
+  margin:20px 0 36px 0;
+  flex-wrap:wrap;
+}
+
+/* butonlar */
+.logo-btn{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-decoration:none;
+  color:inherit;
+  width:150px;
+  padding:18px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  transition:transform .18s ease, box-shadow .18s ease;
+  border:1px solid rgba(255,255,255,0.03);
+}
+
+.logo-btn:hover{ transform:translateY(-6px); box-shadow:0 12px 30px rgba(0,0,0,0.6) }
+
+.logo-btn img{
+  width:72px;
+  height:72px;
+  object-fit:contain;
+  margin-bottom:10px;
+}
+
+/* Eğer görsel yoksa harf göster */
+.letter{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:72px;
+  height:72px;
+  border-radius:50%;
+  font-weight:700;
+  font-size:34px;
+  margin-bottom:10px;
+  background:linear-gradient(135deg,#222,#111);
+  border:2px solid rgba(255,255,255,0.03);
+}
+
+/* A ve M için farklı renk tonları */
+#btn-anime .letter{ background:linear-gradient(135deg,#ff8a00,#ff5a5f) }
+#btn-manga .letter{ background:linear-gradient(135deg,#00bfff,#0066cc) }
+
+.label{
+  font-size:14px;
+  color:var(--muted);
+  margin-top:6px;
+}
+
+/* footer */
+.foot{ margin-top:20px; color:rgba(255,255,255,0.45); font-size:12px }
